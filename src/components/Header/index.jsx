@@ -1,0 +1,28 @@
+import { useState } from 'react';
+import "./index.css"
+
+import logo from '../../img/logo.jpg'
+import { NavLink } from "react-router-dom";
+import MenuNavigation from '../MenuNavigation';
+
+const Header = () => {
+  const [menuOpen, setNemuOpen] = useState(false)
+    const handleMenu = ()=>{
+        setNemuOpen(!menuOpen)
+    }
+  return (
+    <header>
+        <div class="header_logo logo">
+        <img src={logo} alt="Кони и Ко" />
+      </div>
+      <nav class="header_menu">
+       <MenuNavigation valueBurger={menuOpen} handleMenu={handleMenu}/>
+      <button type='button' id='burger_menu' className={menuOpen ? 'burger_menu menu-open' : 'burger_menu menu-close'} onClick={handleMenu} aria-expanded={menuOpen} aria-label="open menu">
+          <span></span>
+      </button>
+      </nav>
+    </header>
+  )
+}
+
+export default Header
