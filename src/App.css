@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   scroll-behavior: smooth;
+}
+
+:root{
+  --font-family-edu: 'Edu NSW ACT Cursive', cursive;
 }
