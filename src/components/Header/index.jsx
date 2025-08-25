@@ -7,9 +7,14 @@ import MenuNavigation from '../MenuNavigation';
 
 const Header = () => {
   const [menuOpen, setNemuOpen] = useState(false)
+   const toggleBodyScroll = (lock) => {
+      document.body.style.overflow = lock ? 'hidden' : '';
+    };
     const handleMenu = ()=>{
-        setNemuOpen(!menuOpen)
+        setNemuOpen(!menuOpen);
+        toggleBodyScroll(!menuOpen);
     }
+    
   return (
     <header>
         <div class="header_logo logo">
