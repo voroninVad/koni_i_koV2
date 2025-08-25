@@ -1,5 +1,5 @@
 .section_news {
-  height: 75vh;
+  min-height: 75vh;
   padding: 50px 30px;
 }
 
