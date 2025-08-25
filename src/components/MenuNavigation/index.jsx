@@ -7,7 +7,7 @@ import { FC } from 'react'
 const MenuNavigation = ({valueBurger, handleMenu}) => {
   return (
      <ul class={valueBurger ? "menu_navigation open" : "menu_navigation"}>
-        <li><NavLink to="/koni_i_koV2" onClick={handleMenu} className="menu_nav_item">Главная</NavLink></li>
+        <li><NavLink to="/" onClick={handleMenu} className="menu_nav_item">Главная</NavLink></li>
         <li><NavLink to="/about" onClick={handleMenu} className="menu_nav_item">О нас</NavLink></li>
         <li><NavLink to="/services" onClick={handleMenu} className="menu_nav_item">Услуги</NavLink></li>
         <li><NavLink to="/news" onClick={handleMenu} className="menu_nav_item">Новости</NavLink></li>
