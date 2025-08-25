@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+
+
 .menu_navigation {
   display: flex;
   justify-content: space-between;
@@ -11,12 +14,11 @@
 }
 
 .menu_navigation li .menu_nav_item, .footer_menu_navigation li .menu_nav_item{
-  font-family: "Edu NSW ACT Cursive", cursive;
-  font-optical-sizing: auto;
+  font-family: 'Edu NSW ACT Cursive', cursive;
   font-style: normal;
+  font-weight: 600;
   color: #fdd8a7;
   text-decoration: none;
-  font-weight: 600;
   font-size: 28px;
 }
 
