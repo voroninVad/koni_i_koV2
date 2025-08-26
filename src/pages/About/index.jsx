@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css'
 import data_about from '../../data/data.json'
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
@@ -15,10 +16,10 @@ const About = () => {
         ))}
          
        </div>
-        <div className="w-full relative overflow-hidden">
+        <div className="yandex_map w-full relative overflow-hidden">
           <iframe
           src="https://yandex.ru/map-widget/v1/org/ekoferma_koni_i_ko/135014901358/?ll=39.803585%2C54.671416&z=16.87"
-          width="100%"
+          width="99%"
           height="400"
           className="relative"
           frameBorder={1}

@@ -18,7 +18,21 @@
   font-size: 72px;
   overflow-wrap: break-word;
   color: #fdd8a7;
-  border-bottom: 2px solid #fdd8a7;
+}
+
+.anim_border{
+  height: 2px;
+  background-color: #fdd8a7;
+  animation: animBorder 2s 1.5s 1 forwards;
+}
+
+@keyframes animBorder{
+  from{
+    width: 0;
+  }
+  to{
+    width: 80%;
+  }
 }
 
 .banner p {
