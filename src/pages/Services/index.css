@@ -108,7 +108,11 @@
   left: 30px;
 }
 
-.card .btn_more_details:hover .arrow {
+/* .card .btn_more_details:hover .arrow {
+  width: 100%;
+} */
+
+.card .btn_more_details .arrow_active{
   width: 100%;
 }
 

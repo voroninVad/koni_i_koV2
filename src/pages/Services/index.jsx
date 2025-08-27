@@ -7,7 +7,7 @@ const Services = () => {
 
 
 const [activeIndex, setActiveIndex] = useState(null);
-
+console.log(activeIndex)
   const handleToggle = (id) => {
     setActiveIndex(activeIndex === id ? null : id);
   };
@@ -30,7 +30,7 @@ const [activeIndex, setActiveIndex] = useState(null);
             <div className="btn_more_details"
             onClick={() => handleToggle(service.id)}
             >
-              <div className="arrow"></div>
+              <div className={`arrow ${activeIndex === service.id ? "arrow_active":""}`}></div>
               <p>Подробнее</p>
             </div>
 
