@@ -79,6 +79,7 @@
   justify-content: flex-end;
   align-items: center;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .btn_more_details p {
@@ -107,7 +108,7 @@
   left: 30px;
 }
 
-.card .btn_more_details .arrow:hover {
+.card .btn_more_details:hover .arrow {
   width: 100%;
 }
 
@@ -149,8 +150,7 @@
 }
 
 .card.active img,
-.card.active .title,
-.card.active .btn_more_details {
+.card.active .title {
   opacity: 0;
 }
 
