@@ -11,7 +11,7 @@ const [activeIndex, setActiveIndex] = useState(null);
   const handleToggle = (id) => {
     setActiveIndex(activeIndex === id ? null : id);
   };
-
+  console.log(activeIndex)
   return (
     <section className="section_services">
       <h1>Наши услуги</h1>
@@ -21,12 +21,17 @@ const [activeIndex, setActiveIndex] = useState(null);
           <div
             key={service.id}
             className={`card ${activeIndex === service.id ? "active" : ""}`}
-            onClick={() => handleToggle(service.id)}
           >
             <img src={service.img} alt={service.title} />
             <div className="title">
               {service.title}
               {service.inscription && <p>({service.inscription})</p>}
+            </div>
+            <div className="btn_more_details"
+            onClick={() => handleToggle(service.id)}
+            >
+              <div className="arrow"></div>
+              <p>Подробнее</p>
             </div>
 
             {activeIndex === service.id && (
