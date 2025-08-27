@@ -46,9 +46,9 @@
   font-family: "Edu NSW ACT Cursive", cursive;
   font-weight: 400;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   font-size: clamp(32px, 8vw, 80px);
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
@@ -63,6 +63,61 @@
 .title p {
   font-size: 24px;
   margin-top: 5px;
+}
+
+.card .btn_more_details {
+  width: 300px;
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-weight: 400;
+  position: relative;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: clamp(24px, 8vw, 36px);
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.btn_more_details p {
+  z-index: 2;
+}
+
+.card .btn_more_details .arrow {
+  width: clamp(17%, 8vw, 25%);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 24px;
+  background-color: #886b55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 1s ease-out;
+}
+
+.card .btn_more_details .arrow::before {
+  position: absolute;
+  content: ">";
+  width: 30px;
+  height: 30px;
+  top: -5px;
+  left: 30px;
+}
+
+/* .card .btn_more_details:hover .arrow {
+  width: 100%;
+} */
+
+.card .btn_more_details .arrow_active {
+  width: 100%;
+}
+
+.card .btn_more_details .arrow:hover + p {
+  color: #fdd8a7;
 }
 
 .card .content {
@@ -107,6 +162,25 @@
   opacity: 1;
 }
 
+@media (max-width: 480px) {
+  .card.active .btn_more_details {
+    opacity: 1;
+  }
+
+  .card .btn_more_details {
+    opacity: 1;
+    bottom: 10%;
+    font-size: 20px;
+    width: 200px;
+    z-index: 1;
+  }
+
+  .card .btn_more_details .arrow::before {
+    top: -3px;
+    left: 13px;
+  }
+}
+
 @media (max-width: 600px) {
   .services {
     grid-template-columns: 1fr;
@@ -131,6 +205,7 @@
   .card .content li {
     font-size: 16px;
   }
+
   .card:last-child {
     grid-column: span 1;
   }

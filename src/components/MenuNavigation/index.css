@@ -37,7 +37,7 @@
 
     flex-direction: column;
     justify-content: space-around;
-    z-index: 1;
+    z-index: 2;
   }
  .open{
     left: 0%;
@@ -55,7 +55,7 @@
     text-align: center;
   }
   .menu_navigation li .menu_nav_item{
-    padding: 0 40px;
+    padding: 0 30px;
     border-bottom: 2px solid #fdd8a7;
   }
 }
