@@ -61,7 +61,7 @@
 }
 
 .title p {
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 5px;
 }
 
@@ -83,6 +83,7 @@
 }
 
 .btn_more_details p {
+  padding-right: 20px; 
   z-index: 2;
 }
 
@@ -231,9 +232,7 @@
     font-size: 18px;
   }
 
-  .card .content p {
-    font-size: 24px;
-  }
+
 }
 
 @media (min-width: 1025px) {
@@ -244,9 +243,5 @@
 
   .card .title {
     font-size: 100px;
-  }
-
-  .card .content p {
-    font-size: 36px;
   }
 }
