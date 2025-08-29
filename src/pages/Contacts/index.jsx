@@ -5,7 +5,8 @@ import icon_wa from '../../img/icon/icon_whatsapp.png'
 import data_contacts from '../../data/data.json'
 import { motion } from 'framer-motion';
 
-const Contacts = () => {
+const Contacts = (props) => {
+  const contacts = props.data;
   return (
     <section className='section_contacts'>
       <div className="section_info">
@@ -38,7 +39,7 @@ const Contacts = () => {
         </ul>
       </div>
       <div className="section_trens">
-        {data_contacts.contacts.map((item) => (
+        {contacts.map((item) => (
           <div key={item.id} className="tren">
             <div className="tren_photo">фото</div>
             <div className="tren_info">

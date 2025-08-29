@@ -1,23 +1,23 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './index.css'
 import { useState } from "react";
-import data_services from '../../data/data.json'
+//import data_services from '../../data/data.json'
 
-const Services = () => {
+const Services = (props) => {
+  const services = props.data;
 
+  const [activeIndex, setActiveIndex] = useState(null);
 
-const [activeIndex, setActiveIndex] = useState(null);
-console.log(activeIndex)
   const handleToggle = (id) => {
     setActiveIndex(activeIndex === id ? null : id);
-  };
-  console.log(activeIndex)
+  }
+
   return (
     <section className="section_services">
       <h1>Наши услуги</h1>
 
-     <div className="services">
-        {data_services.services.map((service) => (
+      <div className="services">
+        {services.map((service) => (
           <div
             key={service.id}
             className={`card ${activeIndex === service.id ? "active" : ""}`}
@@ -28,9 +28,9 @@ console.log(activeIndex)
               {service.inscription && <p>({service.inscription})</p>}
             </div>
             <div className="btn_more_details"
-            onClick={() => handleToggle(service.id)}
+              onClick={() => handleToggle(service.id)}
             >
-              <div className={`arrow ${activeIndex === service.id ? "arrow_active":""}`}></div> 
+              <div className={`arrow ${activeIndex === service.id ? "arrow_active" : ""}`}></div>
               {/* &#62; */}
               <p>Подробнее</p>
             </div>

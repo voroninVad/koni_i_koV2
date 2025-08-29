@@ -3,11 +3,12 @@ import './index.css'
 import data_about from '../../data/data.json'
 import { motion } from 'framer-motion';
 
-const About = () => {
+const About = (props) => {
+  const about = props.data;
   return (
     <section class="about">
        <div className="items">
-        {data_about.about.map((item) => (
+        {about.map((item) => (
           <div 
             key={item.id} className="item1">
             <div class="item_photo"></div>
