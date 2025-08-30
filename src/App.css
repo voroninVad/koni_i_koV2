@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 
 @font-face {
   font-family: "Edu NSW ACT Cursive";
@@ -10,23 +12,23 @@
 
 @font-face {
   font-family: "DM Serif Display";
-  src: url("../public/font/DMSerifDisplay-Regular.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 600;
+  src: url("./font/DMSerifDisplay-Regular.woff2") format("woff2");
+  font-style: italic;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "Bodoni Moda";
-  src: url("./BodoniModa-VariableFont_opsz,wght.woff2") format("woff2");
+  src: url("./font/BodoniModa-VariableFont.woff2") format("woff2");
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: "EB Garamond";
-  src: url("./EBGaramond-VariableFont_wght.woff2") format("woff2");
+  src: url("./font/EBGaramond-VariableFont_wght.woff2") format("woff2");
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 * {
@@ -37,8 +39,8 @@
 }
 
 :root {
-  /* --font-family-edu: "Edu NSW ACT Cursive", cursive; */
-  /* --font-family-edu: "Bodoni Moda", serif; */
+  --font-family-edu: "Edu NSW ACT Cursive", cursive;
+  --font-family-edu: "Bodoni Moda", serif;
   --font-family-edu: "DM Serif Display", serif;
-  /* --font-family-edu: "EB Garamond", Italic; */
+  --font-family-edu: "EB Garamond", serif;
 }

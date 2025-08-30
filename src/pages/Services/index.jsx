@@ -30,7 +30,7 @@ const Services = (props) => {
             <div className="btn_more_details"
               onClick={() => handleToggle(service.id)}
             >
-              ...
+              <span></span>
               {/* <div className={`arrow ${activeIndex === service.id ? "arrow_active" : ""}`}>...</div> */}
               {/* &#62; */}
             </div>
