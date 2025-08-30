@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './index.css'
 import { useState } from "react";
 //import data_services from '../../data/data.json'
@@ -30,9 +30,9 @@ const Services = (props) => {
             <div className="btn_more_details"
               onClick={() => handleToggle(service.id)}
             >
-              <div className={`arrow ${activeIndex === service.id ? "arrow_active" : ""}`}></div>
+              ...
+              {/* <div className={`arrow ${activeIndex === service.id ? "arrow_active" : ""}`}>...</div> */}
               {/* &#62; */}
-              <p>Подробнее</p>
             </div>
 
             {activeIndex === service.id && (

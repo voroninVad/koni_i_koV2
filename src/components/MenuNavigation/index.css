@@ -14,7 +14,7 @@
 }
 
 .menu_navigation li .menu_nav_item, .footer_menu_navigation li .menu_nav_item{
-  font-family: var(--font-family-edu);
+  font-family: "Bodoni Moda", serif;
   font-style: normal;
   font-weight: 600;
   color: #fdd8a7;
