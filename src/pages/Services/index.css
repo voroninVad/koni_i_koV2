@@ -85,23 +85,21 @@
 
 .card .btn_more_details span,
 .card .btn_more_details span::after,
-.card .btn_more_details span::before{
+.card .btn_more_details span::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #fff;
 }
 
-
-.card .btn_more_details span::after{
+.card .btn_more_details span::after {
   left: -15px;
 }
-.card .btn_more_details span::before{
+.card .btn_more_details span::before {
   left: 15px;
 }
-
 
 /* .card .btn_more_details .arrow {
   width: 100%;
@@ -161,13 +159,12 @@
 .card .content ul {
   list-style: disc inside;
   padding-left: 10px;
-  margin-top: 10px;
 }
 
 .card .content p,
 .card .content li {
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 25px;
+  margin-bottom: 5px;
   font-family: "Arial", sans-serif;
 }
 
@@ -180,20 +177,27 @@
   opacity: 1;
 }
 
-@media (max-width: 480px) {
-  .card.active .btn_more_details {
-    opacity: 1;
+@media (min-width: 601px) and (max-width: 768px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
   }
 
-  .card .btn_more_details {
-    opacity: 1;
-    font-size: 20px;
-    z-index: 1;
+  .card {
+    height: 500px;
+  }
+  .card .title {
+    max-width: 300px;
+    font-size: 60px;
   }
 
-  .card .btn_more_details .arrow::before {
-    top: -3px;
-    left: 13px;
+  .title p {
+    font-size: 18px;
+  }
+  .card .content p,
+  .card .content li {
+    font-size: 16px;
   }
 }
 
@@ -217,43 +221,27 @@
     font-size: 18px;
   }
 
-  .card .content p,
-  .card .content li {
-    font-size: 16px;
-  }
-
   .card:last-child {
     grid-column: span 1;
   }
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  .services {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 20px;
-  }
-
-  .card {
-    height: 500px;
-  }
-  .card .title {
-    max-width: 300px;
-    font-size: 60px;
-  }
-
-  .title p {
-    font-size: 18px;
+  .card .content p,
+  .card .content li {
+    font-size: 20px;
   }
 }
 
-@media (min-width: 1025px) {
-  .services {
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(3, 750px);
+@media (max-width: 480px) {
+  .card.active .btn_more_details {
+    opacity: 1;
   }
 
-  .card .title {
-    font-size: 100px;
+  .card .btn_more_details {
+    opacity: 1;
+    font-size: 20px;
+    z-index: 1;
+  }
+    .card .content p,
+  .card .content li {
+    font-size: 14px;
   }
 }
