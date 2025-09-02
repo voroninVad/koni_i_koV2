@@ -2,7 +2,6 @@ import React from 'react'
 import './index.css'
 import icon_tg from '../../img/icon/icon_telegram.png'
 import icon_wa from '../../img/icon/icon_whatsapp.png'
-import data_contacts from '../../data/data.json'
 import { motion } from 'framer-motion';
 
 const Contacts = (props) => {
@@ -41,7 +40,9 @@ const Contacts = (props) => {
       <div className="section_trens">
         {contacts.map((item) => (
           <div key={item.id} className="tren">
-            <div className="tren_photo">фото</div>
+            <div className="tren_photo">
+              <img className='tren_photo' src={item.img} alt={item.name} />
+            </div>
             <div className="tren_info">
               <h2>{item.name}</h2>
               <h2>{item.jobTitile}</h2>

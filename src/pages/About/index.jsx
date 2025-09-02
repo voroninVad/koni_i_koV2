@@ -1,17 +1,15 @@
 import React from 'react'
 import './index.css'
-import data_about from '../../data/data.json'
-import { motion } from 'framer-motion';
 
 const About = (props) => {
   const about = props.data;
   return (
-    <section class="about">
+    <section className="about">
        <div className="items">
         {about.map((item) => (
           <div 
             key={item.id} className="item1">
-            <div class="item_photo"></div>
+            <div className="item_photo"></div>
             <p>{item.item}</p>
           </div>
         ))}

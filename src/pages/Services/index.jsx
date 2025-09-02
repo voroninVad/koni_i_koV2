@@ -1,7 +1,6 @@
 import React from 'react'
 import './index.css'
 import { useState } from "react";
-//import data_services from '../../data/data.json'
 
 const Services = (props) => {
   const services = props.data;
@@ -31,8 +30,6 @@ const Services = (props) => {
               onClick={() => handleToggle(service.id)}
             >
               <span></span>
-              {/* <div className={`arrow ${activeIndex === service.id ? "arrow_active" : ""}`}>...</div> */}
-              {/* &#62; */}
             </div>
 
             {activeIndex === service.id && (

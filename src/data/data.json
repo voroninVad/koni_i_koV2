@@ -4,17 +4,19 @@
         {
             "id":1,
             "name": "Ксения Николаевна",
-            "jobTitile": "Должность",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt eaque quasi quaerat corporis, dicta, vero architecto ad nisi numquam omnis accusantium voluptas porro beatae rem dolorem voluptatem! Ipsam, sint.",
-            "link_tg": "/",
+            "img": "./img/photo_Kseniya.jpg",
+            "jobTitile": "Инструктор по верховой езде, вольтижировке",
+            "description": "Тренер — мастер спорта по вольтижировке, работающий с лошадьми и всадниками разных уровней: от тех, кто впервые садится в седло, до тех, кто стремится развиваться и совершенствовать свою технику.",
+            "link_tg": "https://t.me/kalevax",
             "link_wa": "https://wa.me/+79099781281"
         },
         {
             "id":2,
             "name": "Юлия Владимировна",
-            "jobTitile": "Должность",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nesciunt eaque quasi quaerat corporis, dicta, vero architecto ad nisi numquam omnis accusantium voluptas porro beatae rem dolorem voluptatem! Ipsam, sint.",
-            "link_tg": "/",
+            "img": "./img/photo_Uliya.jpg",
+            "jobTitile": "Инструктор по верховой езде",
+            "description": "Тренер имеет многолетний опыт работы с лошадьми и всадниками разных уровней — от новичков, впервые садящихся в седло, до тех, кто хочет развиваться и совершенствовать технику.",
+            "link_tg": "https://t.me/Esenina_Y",
             "link_wa": "https://wa.me/+79521200068"
         }
     ],

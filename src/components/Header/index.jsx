@@ -19,10 +19,10 @@ const Header = () => {
 
   return (
     <header>
-      <div class="header_logo logo">
+      <div className="header_logo logo">
         <img src={logo} alt="Кони и Ко" />
       </div>
-      <nav class="header_menu">
+      <nav className="header_menu">
         <MenuNavigation valueBurger={menuOpen} handleMenu={handleMenu} />
         <button type='button' id='burger_menu' className={menuOpen ? 'burger_menu menu-open' : 'burger_menu menu-close'} onClick={handleMenu} aria-expanded={menuOpen} aria-label="open menu">
           <span></span>

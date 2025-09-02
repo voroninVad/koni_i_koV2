@@ -35,12 +35,13 @@
 }
 
 .tren_photo {
-  width: 200px;
   height: 250px;
-  background-color: #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.tren_photo img{
+  height: 100%;
 }
 
 .tren_info {
@@ -50,6 +51,10 @@
   flex-direction: column;
   justify-content: space-around;
   color: #000;
+}
+
+.tren_info p{
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .tren_contacts {
