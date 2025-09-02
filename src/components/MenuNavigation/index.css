@@ -13,9 +13,6 @@
 
 .menu_navigation li .menu_nav_item,
 .footer_menu_navigation li .menu_nav_item {
-  font-family: var(--font-family-edu);
-  font-style: normal;
-  font-weight: 600;
   color: #fdd8a7;
   text-decoration: none;
   font-size: 28px;
@@ -35,7 +32,7 @@
     background-color: #886b55;
 
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     z-index: 2;
   }
   .open {
