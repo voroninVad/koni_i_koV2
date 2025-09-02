@@ -70,7 +70,6 @@
   }
 
   .tren_photo {
-    width: 150px;
     height: 200px;
   }
 
@@ -98,7 +97,6 @@
 
   .tren_photo {
     grid-area: photo;
-    width: 120px;
     height: 160px;
   }
 
@@ -124,8 +122,6 @@
   }
 
   .tren_photo {
-    width: 100%;
-    max-width: 250px;
     height: 200px;
     margin: 0 auto;
   }
