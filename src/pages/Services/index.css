@@ -42,7 +42,7 @@
 }
 
 .card .title {
-  width: auto;
+  max-width: 400px;
   font-style: italic;
   font-weight: 400;
   position: absolute;
