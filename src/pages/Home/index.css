@@ -20,17 +20,17 @@
   color: #fdd8a7;
 }
 
-.anim_border{
+.anim_border {
   height: 2px;
   background-color: #fdd8a7;
   animation: animBorder 2s 1.5s 1 forwards;
 }
 
-@keyframes animBorder{
-  from{
+@keyframes animBorder {
+  from {
     width: 0;
   }
-  to{
+  to {
     width: 80%;
   }
 }
@@ -54,21 +54,16 @@
   text-decoration: none;
   padding: 30px 60px;
   font-size: 36px;
-  color: #2e4b47;
-  /* border: 2px solid #FDD8A7; */
-  background-color: #23322d;
+  color: #fff;
   border-radius: 20px;
   animation: colorChange 1s infinite alternate;
 }
 @keyframes colorChange {
   0% {
     background-color: #23322d;
-    color: #fff;
-    scale: 0.95;
   }
   100% {
     background-color: #2e4b47;
-    color: #fff;
   }
 }
 
@@ -86,22 +81,15 @@
   }
 }
 
-@media (max-width: 768px){
-    .banner {
-    background-position: center center;
-  }
-
+@media (max-width: 768px) {
   .banner h1 {
     width: 90%;
-    font-size: 36px;
+    font-size: 42px;
     line-height: 100%;
   }
   .banner {
     height: 95vh;
     background-position: center center;
-  }
-  .banner h1 {
-    font-size: 42px;
   }
   .banner p {
     width: 70%;

@@ -1,0 +1,51 @@
+.no_match {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../..//img/photo_2025-08-14_23-27-43.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top 100% left 0;
+}
+
+.no_match h1 {
+  width: 80%;
+  text-align: center;
+  font-size: 72px;
+  overflow-wrap: break-word;
+  color: #fdd8a7;
+}
+
+.no_match .back_home {
+  text-decoration: none;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fdd8a7;
+  margin-top: 50px;
+}
+
+@media (max-width: 1024px){
+.no_match h1{
+    font-size: 56px;
+}
+.no_match .back_home{
+    font-size: 36px;
+}
+}
+
+@media (max-width: 768px){
+.no_match h1{
+    font-size: 42px;
+}
+.no_match .back_home{
+    font-size: 24px;
+}
+}
+
+@media (max-width: 480px){
+.no_match h1{
+    font-size: 28px;
+}
+}
