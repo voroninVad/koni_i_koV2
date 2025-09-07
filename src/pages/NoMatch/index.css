@@ -26,26 +26,29 @@
   margin-top: 50px;
 }
 
-@media (max-width: 1024px){
-.no_match h1{
+@media (max-width: 1024px) {
+  .no_match h1 {
     font-size: 56px;
-}
-.no_match .back_home{
+  }
+  .no_match .back_home {
     font-size: 36px;
-}
+  }
 }
 
-@media (max-width: 768px){
-.no_match h1{
+@media (max-width: 768px) {
+  .no_match {
+    background-position: top 100% center;
+  }
+  .no_match h1 {
     font-size: 42px;
-}
-.no_match .back_home{
+  }
+  .no_match .back_home {
     font-size: 24px;
-}
+  }
 }
 
-@media (max-width: 480px){
-.no_match h1{
+@media (max-width: 480px) {
+  .no_match h1 {
     font-size: 28px;
-}
+  }
 }
