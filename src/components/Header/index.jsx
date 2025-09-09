@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import "./index.css"
 
-import logo from '../../img/logo.jpg'
-import { NavLink } from "react-router-dom";
+//  import logo from '../../img/logo.jpg'
+import logo from '../../../public/img/logo.png'
 import MenuNavigation from '../MenuNavigation';
 import {useIsMobile} from '../../../hooks/useMobile'
 

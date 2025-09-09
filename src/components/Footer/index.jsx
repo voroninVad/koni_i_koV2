@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 import { NavLink } from "react-router-dom";
-import logo from '../../img/logo.jpg'
+import logo from '../../../public/img/logo.png'
 import icon_tg from '../../img/icon/icon_telegram.png'
 import icon_vk from '../../img/icon/icon_vk.png'
 import icon_inst from '../../img/icon/icon_instagram.png'
